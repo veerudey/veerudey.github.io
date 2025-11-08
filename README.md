@@ -1,1 +1,0 @@
-# veerudey.github.io

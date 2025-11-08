@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Veerudey's Website</title>
+  <title>Veerudey's Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
       color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding-top: 100px;
+      animation: fadeIn 2s ease-in-out;
     }
     h1 {
       font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 10px rgba(255,255,255,0.4);
     }
     p {
-      font-size: 1.2em;
+      font-size: 1.4em;
+      margin: 6px 0;
+    }
+    .footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 1em;
+      opacity: 0.8;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website 🌐</h1>
+  <h1>Welcome to my website 🌐</h1>
   <p>This is my first website.</p>
-  <p>Created by <b>Veerudey</b></p>
+  <p>Created by <strong>Veerudey</strong></p>
+  <p>Dream big, start small — but start today 🚀</p>
+
+  <div class="footer">© 2025 Veerudey | Made with ❤️ and GitHub Pages</div>
 </body>
 </html>

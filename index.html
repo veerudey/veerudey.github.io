@@ -1,187 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome — Veerudey</title>
   <style>
-    :root{
-      --bg: linear-gradient(180deg, #b3e5fc 0%, #e1f5fe 100%);
-      --card:#ffffffcc;
-      --accent:#007bff;
-      --muted:#37474f;
-      --glass: rgba(255,255,255,0.4);
-      --radius:14px;
-      --maxw:980px;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #b3e5fc; /* Light blue background */
+      color: #0d1b2a;
+      text-align: center;
+      padding: 40px;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
-      background:var(--bg);
-      color:#0d1b2a;
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:36px 20px;
+    h1 {
+      font-size: 28px;
     }
-
-    .site {
-      width:100%;
-      max-width:var(--maxw);
-      background: var(--card);
-      border-radius:18px;
-      padding:28px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.15);
-      display:grid;
-      grid-template-columns: 1fr 360px;
-      gap:22px;
-      align-items:start;
-      backdrop-filter: blur(10px);
+    p {
+      font-size: 16px;
+      max-width: 600px;
+      margin: 10px auto;
+      line-height: 1.6;
     }
-
-    .hero { padding-right:6px; }
-    .title {
-      font-size:24px;
-      margin:0 0 6px 0;
-      display:flex;
-      gap:10px;
-      align-items:center;
-    }
-    .byline {
-      font-size:14px;
-      color:var(--muted);
-      margin:0 0 16px 0;
-    }
-    .lead {
-      background: var(--glass);
-      padding:14px 16px;
-      border-radius:12px;
-      margin-bottom:16px;
-      font-size:16px;
-      color:#0d47a1;
-      font-weight:500;
-    }
-
-    .cta-row {
-      display:flex;
-      gap:12px;
-      align-items:center;
-      margin-top:20px;
-      flex-wrap:wrap;
-    }
-
     .btn {
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      background: linear-gradient(90deg, #2196f3, #64b5f6);
-      color:white;
-      padding:10px 16px;
-      border-radius:12px;
-      text-decoration:none;
-      font-weight:600;
-      box-shadow: 0 8px 20px rgba(33,150,243,0.3);
-      border: none;
-      cursor:pointer;
-      transition:0.3s;
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
     }
     .btn:hover {
-      transform:translateY(-2px);
-      box-shadow: 0 10px 24px rgba(33,150,243,0.4);
+      background-color: #0056b3;
     }
-
-    .panel {
-      background: rgba(255,255,255,0.7);
-      padding:16px;
-      border-radius:12px;
-      min-height:120px;
-      text-align:center;
-      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-    }
-    .panel h2 {
-      margin:6px 0 10px 0;
-      font-size:16px;
-      color:#0d47a1;
-    }
-    .panel p {
-      margin:0;
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.5;
-    }
-
-    .ai-card{
-      margin-top:6px;
-      background: rgba(255,255,255,0.8);
-      padding:18px;
-      border-radius:12px;
-      box-shadow: inset 0 1px 0 rgba(0,0,0,0.05);
-    }
-    .ai-card h3 {
-      margin:0 0 8px 0;
-      font-size:18px;
-      color:#0d47a1;
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-    .ai-card p {
-      margin:0;
-      color:#37474f;
-      line-height:1.6;
-      font-size:15px;
-    }
-
     footer {
-      text-align:center;
-      margin-top:30px;
-      font-size:14px;
-      color:#546e7a;
-    }
-
-    @media (max-width:880px){
-      .site { grid-template-columns: 1fr; }
-      .panel { order: -1; }
+      margin-top: 40px;
+      font-size: 14px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <main class="site">
-    <section class="hero">
-      <h1 class="title">
-        Welcome to my website 🌐
-        <small style="font-size:13px;color:#37474f;margin-left:6px">Created by Veerudey</small>
-      </h1>
+  <h1>Welcome to my website 🌐</h1>
+  <p><strong>Created by Veerudey</strong></p>
+  <p>Dream big, start small — but start today 🚀</p>
 
-      <div class="lead">
-        Dream big, start small — but start today 🚀
-      </div>
+  <h2>🧠 What is AI?</h2>
+  <p>
+    AI stands for <strong>Artificial Intelligence</strong> — it means giving machines or computers the ability to think and learn like humans.
+    AI allows systems to understand, reason, and make decisions automatically.
+  </p>
 
-      <article id="what-is-ai" class="ai-card">
-        <h3>🧠 What is AI?</h3>
-        <p>
-          <strong>AI</strong> stands for <strong>Artificial Intelligence</strong> — it means giving machines or computers the ability to think and learn like humans.
-          AI helps systems understand, reason, and make decisions automatically.
-        </p>
-      </article>
+  <a class="btn" href="https://discord.gg/DzjV9R5T" target="_blank">Join My Discord Server 🚀</a>
 
-      <div class="cta-row">
-        <a class="btn" href="https://discord.gg/DzjV9R5T" target="_blank">
-          Join My Discord Server 🚀
-        </a>
-      </div>
-
-      <footer>
-        © 2025 Veerudey
-      </footer>
-    </section>
-
-    <aside class="panel">
-      <h2>Quick Info</h2>
-      <p>This site was created by <strong>Veerudey</strong>. You can join his Discord using the button below.</p>
-    </aside>
-  </main>
+  <footer>© 2025 Veerudey</footer>
 </body>
 </html>

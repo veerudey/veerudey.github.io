@@ -1,78 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Veerudey | My Gaming Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome — Veerudey</title>
   <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(180deg, #b3e5fc, #e1f5fe);
-      color: #0f172a;
-      text-align: center;
-      margin: 0;
-      padding: 40px 20px;
+    :root{
+      --bg: linear-gradient(180deg, #b3e5fc 0%, #e1f5fe 100%);
+      --card:#ffffffcc;
+      --accent:#007bff;
+      --muted:#37474f;
+      --glass: rgba(255,255,255,0.4);
+      --radius:14px;
+      --maxw:980px;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+      background:var(--bg);
+      color:#0d1b2a;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:36px 20px;
     }
-    p {
-      font-size: 1.1rem;
-      margin: 8px 0;
+
+    .site {
+      width:100%;
+      max-width:var(--maxw);
+      background: var(--card);
+      border-radius:18px;
+      padding:28px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:22px;
+      align-items:start;
+      backdrop-filter: blur(10px);
     }
-    h2 {
-      margin-top: 40px;
-      font-size: 1.4rem;
+
+    .hero { padding-right:6px; }
+    .title {
+      font-size:24px;
+      margin:0 0 6px 0;
+      display:flex;
+      gap:10px;
+      align-items:center;
     }
-    .discord-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #5865F2;
-      color: white;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      box-shadow: 0 0 15px rgba(88, 101, 242, 0.6);
-      transition: 0.3s;
+    .byline {
+      font-size:14px;
+      color:var(--muted);
+      margin:0 0 16px 0;
     }
-    .discord-btn:hover {
-      background: #4752c4;
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(88, 101, 242, 0.8);
+    .lead {
+      background: var(--glass);
+      padding:14px 16px;
+      border-radius:12px;
+      margin-bottom:16px;
+      font-size:16px;
+      color:#0d47a1;
+      font-weight:500;
     }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #334155;
+
+    .cta-row {
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:20px;
+      flex-wrap:wrap;
     }
-  </style>
-</head>
-<body>
 
-  <h1>Welcome to my website 🌐</h1>
-  <img src="welcome.jpg" alt="Welcome Image" style="width:400px; border-radius:10px;">
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background: linear-gradient(90deg, #2196f3, #64b5f6);
+      color:white;
+      padding:10px 16px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 8px 20px rgba(33,150,243,0.3);
+      border: none;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    .btn:hover {
+      transform:translateY(-2px);
+      box-shadow: 0 10px 24px rgba(33,150,243,0.4);
+    }
 
-  <p>This is my first website.</p>
+    .panel {
+      background: rgba(255,255,255,0.7);
+      padding:16px;
+      border-radius:12px;
+      min-height:120px;
+      text-align:center;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .panel h2 {
+      margin:6px 0 10px 0;
+      font-size:16px;
+      color:#0d47a1;
+    }
+    .panel p {
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.5;
+    }
 
-  <p><strong>Created by Veerudey</strong></p>
-
-  <p><em>Dream big, start small — but start today 🚀</em></p>
-
-  <h2>About Me</h2>
-  <p>Hi, I'm <strong>Veerudey 👋</strong>. I’m a passionate gamer who dreams of becoming a professional in gaming.  
-  I love playing <strong>Roblox, Minecraft</strong> and <strong>Call of Duty</strong>.  
-  This is my first step into sharing my gaming journey with the world! 🎮</p>
-
-  <h2>Join My Discord Server 🚀</h2>
-  <p>Join my community to play together, share gaming moments, and make new friends!</p>
-  <a href="https://discord.gg/Ygyb6Q2a" target="_blank" class="discord-btn">
-    Join My Discord
-  </a>
-
-  <footer>© 2025 Veerudey | Gamer in the Making 🎮</footer>
-
-</body>
-</html>
+    .ai-card{
+      margin-top:6px;
+      background: rgba(255,255,255,0.8);

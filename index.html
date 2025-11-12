@@ -3,43 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artificial. Intelligence. veerudey</title>
+  <title>Veerudey Website</title>
   <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
       font-family: Arial, sans-serif;
-      background-color: #b3e5fc; /* Light blue background */
-      color: #0d1b2a;
+      background-color: #e8f4ff;
+      color: #222;
       text-align: center;
-      padding: 40px;
     }
-    h1 {
-      font-size: 28px;
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px 10px;
     }
-    p {
-      font-size: 16px;
-      max-width: 600px;
-      margin: 10px auto;
-      line-height: 1.6;
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
     }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* ---- Button ---- */
     .btn {
       display: inline-block;
-      background-color: #007bff;
+      background: #5865F2;
       color: white;
       padding: 10px 20px;
-      border-radius: 8px;
+      margin-top: 15px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 20px;
+      transition: 0.3s;
     }
+
     .btn:hover {
-      background-color: #0056b3;
+      background: #4752c4;
     }
+
+    /* ---- Footer ---- */
     footer {
-      margin-top: 40px;
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
       font-size: 14px;
-      color: #333;
     }
-  </style>
+
+    /* ---- Responsive Design ---- */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .container {
+        flex-direction: column;
+      }
+      .card {
+        width: 90%;
+      }
+    }
 </head>
 <body>
   <h1>Welcome to my website 🌐</h1>

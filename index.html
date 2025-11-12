@@ -11,12 +11,44 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       background-color: #e8f4ff;
       color: #222;
       text-align: center;
+    }
+
+    .hero {
+      background-color: #111;
+      color: white;
+      padding: 80px 10%;
+      text-align: left;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+    }
+
+    .author img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .author span {
+      font-weight: 600;
+      color: #00aaff;
+      font-size: 1.1rem;
     }
 
     header {
@@ -74,6 +106,9 @@
     }
 
     @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
       header h1 {
         font-size: 1.6rem;
       }
@@ -85,6 +120,14 @@
 </head>
   
 <body>
+
+  <section class="hero">
+    <h1>Simple Website</h1>
+    <div class="author">
+      <p>By <span>Veerudey</span></p>
+    </div>
+  </section>
+
   <header>
     <h1>Welcome to my website 🌐</h1>
     <p><strong>Created by Veerudey</strong></p>
@@ -100,12 +143,12 @@
   <img src="VR.jpeg" alt="VR Image">
   <p><i>Virtual Reality (VR)</i> is a technology that creates a fully immersive, computer-generated environment that users can interact with.</p>
   <p>Users wear a VR headset that blocks out the real world and replaces it with a digital one, giving the sensation of being in a different place. This technology is used in gaming, simulations, and training.</p>
- <p>_______________</p>
+  <p>_______________</p>
   
   <h2>🎮 Where is Virtual Reality Being Used?</h2>
   <img src="GAMING.jpeg" alt="Gaming Image">
   <p><b>Gaming:</b> VR is used for bewitching gaming experiences. You can put on a VR headset and feel as if you are inside the game — exploring magical worlds or battling virtual monsters.</p>
- <p>_______________</p>
+  <p>_______________</p>
   
   <img src="edg.jpg" alt="Education Image">
   <p><b>Education:</b> VR can make learning more engaging. Students can take virtual field trips, explore the human body in 3D, or even travel to space to learn about planets and stars.</p>

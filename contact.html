@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Veerudey</title>
-  <link rel="stylesheet" href="style.css">
+
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #dbeafe, #e8f4ff);
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #e8f4ff;
+      color: #222;
       text-align: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      margin: 0;
+      padding: 0;
     }
 
     nav {
@@ -36,45 +35,72 @@
     }
 
     h1 {
+      margin-top: 40px;
       color: #007bff;
-      margin-top: 50px;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
-    p {
-      font-size: 1.2rem;
-      color: #333;
-      margin: 20px auto;
-      width: 80%;
-      max-width: 600px;
+    .contact-box {
+      background: white;
+      max-width: 450px;
+      margin: 40px auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
 
-    a.contact-link {
-      display: inline-block;
-      background: #007bff;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
+    .contact-box p {
+      font-size: 1.1rem;
+      margin: 15px 0;
+    }
+
+    .contact-info {
       margin-top: 20px;
+      background: #f0f7ff;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .contact-info strong {
+      color: #007bff;
+    }
+
+    a.discord-btn {
+      display: inline-block;
+      background: #5865F2;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
       font-weight: bold;
+      margin-top: 20px;
       transition: 0.3s;
     }
 
-    a.contact-link:hover {
-      background: #0056b3;
+    a.discord-btn:hover {
+      background: #4752c4;
     }
 
     footer {
-      margin-top: auto;
-      padding: 15px;
       background: #007bff;
       color: white;
-      font-weight: bold;
+      padding: 10px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .contact-box {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -83,13 +109,16 @@
 
   <h1>📞 Contact Me</h1>
 
-  <p>If you want to reach out, join my 
-    <a href="https://discord.gg/DzjV9R5T" target="_blank">Discord Server</a> 💬
-  </p>
+  <div class="contact-box">
+    <p>If you’d like to reach out, feel free to contact me below 👇</p>
 
-  <p>Or you can contact me directly at:</p>
-  <a href="tel:9416589933" class="contact-link">📱 Call Me: 9416589933</a>
+    <div class="contact-info">
+      <p><strong>📱 Phone:</strong> <a href="tel:9416589933">9416589933</a></p>
+      <p><strong>💬 Discord:</strong> Join my community server!</p>
+    </div>
 
-  <footer>© 2025 Veerudey</footer>
+    <a class="discord-btn" href="https://discord.gg/DzjV9R5T" target="_blank">Join My Discord 🚀</a>
+  </div>
+
 </body>
 </html>

@@ -43,13 +43,7 @@ nav a:hover{
   background:#111;
   color:white;
   padding:80px 10%;
-}
-
-.hero-content{
-  display:flex;
-  justify-content:space-between; /* 🔥 LEFT + RIGHT */
-  align-items:center;
-  flex-wrap:wrap;
+  position:relative;   /* 🔥 IMPORTANT */
 }
 
 .hero h1{
@@ -59,9 +53,12 @@ nav a:hover{
 
 /* AUTHOR RIGHT */
 .author{
+  position:absolute;
+  top:40px;
+  right:10%;
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:10px;
 }
 
 .author img{
@@ -90,11 +87,13 @@ img{
   margin:10px auto;
 }
 
+/* 🔥 P TAG BLACK */
 p{
   width:90%;
   max-width:700px;
   margin:10px auto;
   line-height:1.5;
+  color:black;  /* 🔥 ye add kiya */
 }
 
 .btn{
@@ -117,13 +116,10 @@ footer{
 
 /* MOBILE FIX */
 @media(max-width:768px){
-  .hero-content{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
   .author{
+    position:static;
     margin-top:15px;
+    justify-content:flex-start;
   }
 }
 </style>
@@ -138,15 +134,11 @@ footer{
 </nav>
 
 <section class="hero">
-  <div class="hero-content">
+  <h1>Welcome to my website 🌐</h1>
 
-    <h1>Welcome to my website 🌐</h1>
-
-    <div class="author">
-      <img src="profile.jpeg" alt="Profile">
-      <span>By Veerudey</span>
-    </div>
-
+  <div class="author">
+    <img src="profile.jpeg" alt="Profile">
+    <span>By Veerudey</span>
   </div>
 </section>
 

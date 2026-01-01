@@ -47,7 +47,6 @@
       color: white;
       padding: 80px 10%;
       text-align: left;
-      position: relative;
     }
 
     .hero h1 {
@@ -56,26 +55,25 @@
       margin-bottom: 15px;
     }
 
-   .author {
-  display: flex;
-  align-items: center; 
-  gap: 10px;          
-  margin-top: 10px;
-}
+    .author {
+      display: flex;
+      align-items: center; 
+      gap: 10px;          
+      margin-top: 10px;
+    }
 
     .author img {
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      margin-right: 15px;
       border: 3px solid #007bff;
     }
 
     .author span {
-  font-weight: 600;
-  color: #00aaff;
-  font-size: 1.1rem;
-}
+      font-weight: 600;
+      color: #00aaff;
+      font-size: 1.1rem;
+    }
 
     h2 {
       margin-top: 25px;
@@ -129,6 +127,7 @@
       }
     }
 
+    /* Loading Screen */
     #loading {
       position: fixed;
       top: 0;
@@ -175,62 +174,60 @@
     @keyframes fadeOut {
       to { opacity: 0; visibility: hidden; }
     }
-
   </style>
 </head>
-  
+
 <body>
 
- <div id="loading">
+<!-- Loading Screen -->
+<div id="loading">
   <div class="loader-ring"></div>
   <p class="loading-text">Loading your experience...</p>
 </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<!-- Navbar -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <section class="hero">
-    <h1>Welcome to my website 🌐</h1>
-   <div class="author">
-  <img src="profile.jpeg" alt="Profile">
-  <span>By Veerudey</span>
-</div>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Welcome to my website 🌐</h1>
+  <div class="author">
+    <img src="profile.jpeg" alt="Profile">
+    <span>By Veerudey</span>
+  </div>
+</section>
 
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<!-- Content -->
+<h2>🧠 What is AI?</h2>
+<img src="wia.jpg" alt="AI Image">
+<p>
+  AI stands for <strong>Artificial Intelligence</strong> — it means giving machines or computers
+  the ability to think and learn like humans.
+</p>
 
-  <model-viewer 
-    src="superrobot.glb"
-    alt="Super Robot 3D Model"
-    auto-rotate
-    camera-controls
-    shadow-intensity="1"
-    style="width: 100%; max-width: 400px; height: 400px; margin: 20px auto; display: block; background-color: #C7C2BF; border-radius: 10px;"
-  ></model-viewer>
+<h2>🕶️ Virtual Reality</h2>
+<img src="VR.jpeg" alt="VR Image">
+<p>
+  <i>Virtual Reality (VR)</i> creates immersive environments that users can interact with.
+</p>
 
-  <h2>🧠 What is AI?</h2>
-  <img src="wia.jpg" alt="AI Image">
-  <p>AI stands for <strong>Artificial Intelligence</strong> — it means giving machines or computers the ability to think and learn like humans.
-  AI allows systems to understand, reason, and make decisions automatically.</p>
+<h2>🎮 Where is Virtual Reality Being Used?</h2>
+<img src="GAMING.jpeg" alt="Gaming Image">
+<p><b>Gaming:</b> VR is used for immersive gaming experiences.</p>
 
-  <h2>🕶️ Virtual Reality</h2>
-  <img src="VR.jpeg" alt="VR Image">
-  <p><i>Virtual Reality (VR)</i> creates immersive environments that users can interact with.</p>
+<img src="edg.jpg" alt="Education Image">
+<p><b>Education:</b> VR helps make learning more interactive.</p>
 
-  <h2>🎮 Where is Virtual Reality Being Used?</h2>
-  <img src="GAMING.jpeg" alt="Gaming Image">
-  <p><b>Gaming:</b> VR is used for immersive gaming experiences.</p>
+<a class="btn" href="https://discord.gg/DzjV9R5T" target="_blank">
+  Join My Discord Server 🚀
+</a>
 
-  <img src="edg.jpg" alt="Education Image">
-  <p><b>Education:</b> VR helps make learning more interactive.</p>
+<footer>© 2025 Veerudey</footer>
 
-  <a class="btn" href="https://discord.gg/DzjV9R5T" target="_blank">Join My Discord Server 🚀</a>
-
-  <footer>© 2025 Veerudey</footer>
-  
 <script>
   setTimeout(() => {
     document.getElementById("loading").style.display = "none";

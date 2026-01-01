@@ -19,7 +19,7 @@
       background-color: #C7C2BF;
       color: #222;
       text-align: center;
-      overflow-x: hidden;   
+      overflow-x: hidden;
     }
 
     nav {
@@ -47,6 +47,7 @@
       color: white;
       padding: 80px 10%;
       text-align: left;
+      position: relative;
     }
 
     .hero h1 {
@@ -55,11 +56,13 @@
       margin-bottom: 15px;
     }
 
+    /* 🔥 SIRF YE CHANGE HAI */
     .author {
       display: flex;
-      align-items: center; 
-      gap: 10px;          
+      align-items: center;
+      gap: 10px;
       margin-top: 10px;
+      justify-content: flex-start; /* LEFT */
     }
 
     .author img {
@@ -127,7 +130,6 @@
       }
     }
 
-    /* Loading Screen */
     #loading {
       position: fixed;
       top: 0;
@@ -179,20 +181,17 @@
 
 <body>
 
-<!-- Loading Screen -->
 <div id="loading">
   <div class="loader-ring"></div>
   <p class="loading-text">Loading your experience...</p>
 </div>
 
-<!-- Navbar -->
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </nav>
 
-<!-- Hero Section -->
 <section class="hero">
   <h1>Welcome to my website 🌐</h1>
   <div class="author">
@@ -201,19 +200,13 @@
   </div>
 </section>
 
-<!-- Content -->
 <h2>🧠 What is AI?</h2>
 <img src="wia.jpg" alt="AI Image">
-<p>
-  AI stands for <strong>Artificial Intelligence</strong> — it means giving machines or computers
-  the ability to think and learn like humans.
-</p>
+<p>AI stands for <strong>Artificial Intelligence</strong> — it means giving machines or computers the ability to think and learn like humans.</p>
 
 <h2>🕶️ Virtual Reality</h2>
 <img src="VR.jpeg" alt="VR Image">
-<p>
-  <i>Virtual Reality (VR)</i> creates immersive environments that users can interact with.
-</p>
+<p><i>Virtual Reality (VR)</i> creates immersive environments that users can interact with.</p>
 
 <h2>🎮 Where is Virtual Reality Being Used?</h2>
 <img src="GAMING.jpeg" alt="Gaming Image">
